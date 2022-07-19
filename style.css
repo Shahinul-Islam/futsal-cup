@@ -1,0 +1,12 @@
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* justify-content: center; */
+  justify-items: center;
+  padding: 40px;
+  background-color: #f9f2ed;
+  width: 70%;
+  margin: 0 auto;
+  align-items: center;
+  border-radius: 10px;
+}
