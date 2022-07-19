@@ -73,3 +73,16 @@ aside {
   display: flex;
   align-items: center;
 }
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+footer a {
+  text-decoration: none;
+  margin-right: 17px;
+  color: white;
+}
