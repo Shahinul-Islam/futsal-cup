@@ -17,9 +17,6 @@ a {
   text-decoration: none;
   color: white;
 }
-a:visited {
-  background-color: #338567;
-}
 header {
   display: flex;
   justify-content: center;
@@ -93,6 +90,11 @@ aside {
   display: flex;
   align-items: center;
 }
+#special-btn {
+  margin: 20px 0;
+  text-align: center;
+  display: none;
+}
 footer {
   background-color: black;
   color: white;
@@ -111,11 +113,81 @@ footer a {
   justify-content: space-evenly;
   margin-top: 30px;
 }
-
+.social-icon {
+  margin-top: 20px;
+  color: white;
+}
+.social-icon a {
+  margin-right: 5px;
+}
 /* upcoming match page  */
 
 .top-img-sec {
   display: flex;
   gap: 10px;
   padding: 10px;
+}
+
+/*------------------------------------------
+               media querie
+ ----------------------------------------------- */
+/* small devices */
+
+@media screen and (max-width: 576px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-left {
+    width: 100%;
+  }
+  .header-right {
+    width: 100%;
+    margin-top: 25px;
+  }
+  .header-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main {
+    flex-direction: column;
+  }
+  aside {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .blogs-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .links {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* tablet devices  */
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  header {
+    width: 98%;
+  }
+  main {
+    flex-direction: column;
+  }
+  aside {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    background-color: white;
+  }
+  .blogs-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #special-btn {
+    display: block;
+  }
+  footer {
+    width: 100%;
+  }
 }
