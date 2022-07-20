@@ -14,11 +14,9 @@ button {
   font-size: 15px;
 }
 header {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* justify-content: center; */
-  justify-items: center;
-  padding: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
   background-color: #f9f2ed;
   width: 80%;
   margin: 0 auto;
@@ -26,12 +24,27 @@ header {
   border-radius: 10px;
   margin-top: 20px;
 }
+.header-left {
+  width: 50%;
+}
+.header-right {
+  width: 50%;
+}
+.header-right img {
+  width: 100%;
+}
 .header-left h2 {
   font-size: 45px;
 }
+.header-btn {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-size: 18px;
+}
 main {
   display: flex;
-  margin-top: 30px;
+  margin-top: 70px;
   gap: 15px;
 }
 aside {
@@ -42,7 +55,6 @@ aside {
   padding: 15px;
   height: 150px;
   justify-content: space-evenly;
-  margin-top: 15px;
 }
 .blogs-section {
   display: grid;
@@ -77,12 +89,17 @@ footer {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 40px;
   margin-top: 50px;
 }
 
 footer a {
   text-decoration: none;
-  margin-right: 17px;
   color: white;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
 }
