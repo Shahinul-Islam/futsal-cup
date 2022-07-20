@@ -13,6 +13,13 @@ button {
   border-radius: 5px;
   font-size: 15px;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  background-color: #338567;
+}
 header {
   display: flex;
   justify-content: center;
@@ -46,6 +53,7 @@ main {
   display: flex;
   margin-top: 70px;
   gap: 15px;
+  justify-content: center;
 }
 aside {
   width: 200px;
@@ -102,4 +110,12 @@ footer a {
   display: flex;
   justify-content: space-evenly;
   margin-top: 30px;
+}
+
+/* upcoming match page  */
+
+.top-img-sec {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
 }
